@@ -1,8 +1,6 @@
 public class Marcus implements Runnable {
        
-        // public Pedro() {
-        // }
-
+        
      @Override
     public void run() {
         Turtle marcus = new Turtle(1000,1000);
