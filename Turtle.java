@@ -39,41 +39,47 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
      *
      * @param a commandline args
      */
-    public static void main(String[] a)
+    public static void main(String[] a)   
     {
+
+        new Thread(new Bob()).start();
+        new Thread(new Billy()).start();
+        new Thread(new Pedro()).start();
+        new Thread(new Marcus()).start();
+        new Thread(new Julie()).start();
         //this drawing is eyewear
-        Turtle bob = new Turtle();
-        bob.penColor("lightblue");
-        bob.bgcolor("salmon");
+        // Turtle bob = new Turtle();
+        // bob.penColor("lightblue");
+        // bob.bgcolor("salmon");
 
-        bob.width(20);
-        bob.speed(100);
+        // bob.width(20);
+        // bob.speed(100);
         
 
-        for(int i=0;i<10;i++){
-            bob.forward(400);
-            bob.right(45);
+        // for(int i=0;i<10;i++){
+        //     bob.forward(400);
+        //     bob.right(45);
             
-        }
+        // }
         
-         bob.forward(200);
-         bob.right(90);
-         bob.backward(300);
-         bob.right(90);
-         bob.forward(200);
-         bob.right(45);
+        //  bob.forward(200);
+        //  bob.right(90);
+        //  bob.backward(300);
+        //  bob.right(90);
+        //  bob.forward(200);
+        //  bob.right(45);
          
          
 
-         for(int i=0;i<13;i++){
-            bob.forward(400);
-            bob.right(45);
-        }
+        //  for(int i=0;i<13;i++){
+        //     bob.forward(400);
+        //     bob.right(45);
+        // }
       
     
        
 
-        bob.saveGCODE("test.gcode");
+        // bob.saveGCODE("test.gcode");
     }
 
     private static ArrayList<Turtle> turtles;
